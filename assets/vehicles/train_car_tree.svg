@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="46" height="28" viewBox="0 0 46 28">
+<!-- cadeaux -->
+<rect x="33.2" y="5.6" width="5" height="4.6" rx="0.7" fill="#2d3a5c"/>
+<rect x="35.1" y="5.6" width="1.2" height="4.6" fill="#fff1c9"/>
+<circle cx="35" cy="5.3" r="0.8" fill="#fff1c9"/><circle cx="36.4" cy="5.3" r="0.8" fill="#fff1c9"/>
+<rect x="24" y="8.4" width="8" height="6.4" rx="0.8" fill="#c94a3f"/>
+<rect x="24" y="12.4" width="8" height="2.4" fill="#a83232"/>
+<rect x="27.3" y="8.4" width="1.4" height="6.4" fill="#e0b84a"/>
+<circle cx="27.1" cy="8" r="1" fill="#e0b84a"/><circle cx="28.9" cy="8" r="1" fill="#e0b84a"/>
+<rect x="32.6" y="10.2" width="7.4" height="4.6" rx="0.8" fill="#e0b84a"/>
+<rect x="32.6" y="13" width="7.4" height="1.8" fill="#c99a2e"/>
+<rect x="35.7" y="10.2" width="1.3" height="4.6" fill="#a83232"/>
+<path d="M24.4 8.7Q26 7.7 27 8.6" fill="none" stroke="#f4f6fb" stroke-width="0.7" stroke-linecap="round"/>
+<!-- sapin -->
+<rect x="12.9" y="12" width="2.2" height="3" fill="#5b3a22"/>
+<g stroke-linejoin="round" stroke-width="1.2">
+<path d="M14 7.5L5.6 13.6H22.4Z" fill="#23523d" stroke="#23523d"/>
+<path d="M14 4.6L7 10.4H21Z" fill="#2f6b4f" stroke="#2f6b4f"/>
+<path d="M14 2.4L9 7H19Z" fill="#3c8262" stroke="#3c8262"/>
+</g>
+<path d="M11.2 5.6Q14 3.4 14.2 2.2Q15 3.6 17 5.4Q15.5 5 14.4 5.6Q12.8 4.8 11.2 5.6Z" fill="#f4f6fb"/>
+<path d="M8 10Q10 9 11.5 9.9M16.5 9.8Q18.5 9 20.3 10.2M6.8 13.4Q9 12.3 11 13.3M17.5 13.2Q19.6 12.4 21.6 13.5" fill="none" stroke="#f4f6fb" stroke-width="0.9" stroke-linecap="round"/>
+<circle cx="13" cy="8" r="0.7" fill="#c94a3f"/><circle cx="16.2" cy="11.6" r="0.7" fill="#ffcc66"/><circle cx="10.6" cy="11.8" r="0.7" fill="#e8823a"/>
+<path d="M14 0L14.6 1.2L15.9 1.4L14.9 2.2L15.2 3.5L14 2.8L12.8 3.5L13.1 2.2L12.1 1.4L13.4 1.2Z" fill="#ffcc66"/>
+<!-- plateau -->
+<rect x="3" y="10.5" width="1.6" height="5" rx="0.5" fill="#5b3a22"/><rect x="41.4" y="10.5" width="1.6" height="5" rx="0.5" fill="#5b3a22"/>
+<rect x="2" y="14.4" width="42" height="4.2" rx="1" fill="#7a5232"/>
+<rect x="2" y="16.8" width="42" height="1.8" fill="#5b3a22"/>
+<rect x="3" y="14.9" width="40" height="0.7" rx="0.35" fill="#9a6f47"/>
+<circle cx="8" cy="16.2" r="0.45" fill="#d4a64a"/><circle cx="23" cy="16.2" r="0.45" fill="#d4a64a"/><circle cx="38" cy="16.2" r="0.45" fill="#d4a64a"/>
+<rect x="1.5" y="18" width="43" height="3.2" rx="1" fill="#1f2430"/>
+<rect x="2.5" y="18.5" width="41" height="0.8" rx="0.4" fill="#2d3a5c"/>
+<rect x="0" y="18.9" width="2" height="1.5" rx="0.5" fill="#2d3a5c"/><rect x="44" y="18.9" width="2" height="1.5" rx="0.5" fill="#2d3a5c"/>
+<circle cx="23" cy="20.3" r="0.45" fill="#d4a64a"/>
+</svg>

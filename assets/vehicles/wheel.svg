@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="16" height="16" viewBox="0 0 16 16">
+<g fill="#1f2430"><rect x="6.5" y="0.1" width="3" height="3" rx="0.9" transform="rotate(0 8 8)"/><rect x="6.5" y="0.1" width="3" height="3" rx="0.9" transform="rotate(45 8 8)"/><rect x="6.5" y="0.1" width="3" height="3" rx="0.9" transform="rotate(90 8 8)"/><rect x="6.5" y="0.1" width="3" height="3" rx="0.9" transform="rotate(135 8 8)"/><rect x="6.5" y="0.1" width="3" height="3" rx="0.9" transform="rotate(180 8 8)"/><rect x="6.5" y="0.1" width="3" height="3" rx="0.9" transform="rotate(225 8 8)"/><rect x="6.5" y="0.1" width="3" height="3" rx="0.9" transform="rotate(270 8 8)"/><rect x="6.5" y="0.1" width="3" height="3" rx="0.9" transform="rotate(315 8 8)"/></g>
+<circle cx="8" cy="8" r="6.9" fill="#1f2430"/>
+<circle cx="8" cy="8" r="5.5" fill="#2d3a5c"/>
+<path d="M3.6 6.2 A4.8 4.8 0 0 1 7 3.3" fill="none" stroke="#4a5a85" stroke-width="0.9" stroke-linecap="round"/>
+<circle cx="8" cy="8" r="4" fill="#c99a2e"/>
+<circle cx="8" cy="8" r="3.2" fill="#e0b84a"/>
+<circle cx="9.63" cy="9.63" r="0.5" fill="#c99a2e"/><circle cx="6.37" cy="9.63" r="0.5" fill="#c99a2e"/><circle cx="6.37" cy="6.37" r="0.5" fill="#c99a2e"/><circle cx="9.63" cy="6.37" r="0.5" fill="#c99a2e"/>
+<circle cx="8" cy="8" r="1.2" fill="#c99a2e"/>
+<circle cx="7.7" cy="7.7" r="0.45" fill="#fff1c9"/>
+</svg>

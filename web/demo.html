@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christmas Mode — it snows on your Mac</title>
+<meta name="description" content="A free macOS app that makes it snow over your whole Mac. Snow piles up on your windows — shake them and it falls off.">
+<meta property="og:title" content="Christmas Mode — it snows on your Mac">
+<meta property="og:description" content="Snow piles up on your real windows. Shake them and it falls off. Free & open source for macOS.">
+<meta property="og:image" content="https://romainsildev.github.io/christmas-mode/media/hero.png">
+<meta property="og:url" content="https://romainsildev.github.io/christmas-mode/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Christmas Mode — it snows on your Mac">
+<meta name="twitter:description" content="Snow piles up on your real windows. Shake them and it falls off. Free & open source.">
+<meta name="twitter:image" content="https://romainsildev.github.io/christmas-mode/media/hero.png">
+<link rel="icon" href="media/icon.png">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0a1230; font-family: -apple-system, "SF Pro Rounded", system-ui, sans-serif; }
+  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+  #wallpaper { z-index: 0; }
+  #overlay { z-index: 3; pointer-events: none; }
+  .menubar { position: fixed; top: 0; left: 0; right: 0; height: 28px; z-index: 2; background: rgba(16,16,26,.55); backdrop-filter: blur(20px);
+             color: #f2f2f2; font-size: 13px; display: flex; align-items: center; gap: 18px; padding: 0 14px; box-sizing: border-box; }
+  .menubar b { font-weight: 700; } .menubar .r { margin-left: auto; display: flex; gap: 14px; align-items: center; }
+  .win { position: fixed; z-index: 1; border-radius: 12px; background: #1e1e21; box-shadow: 0 18px 50px rgba(0,0,0,.55), 0 0 0 .5px rgba(255,255,255,.14) inset;
+         overflow: hidden; color: #e8e8ea; user-select: none; }
+  .bar { height: 30px; display: flex; align-items: center; gap: 8px; padding: 0 12px; background: #2c2c30; cursor: grab; font-size: 13px; }
+  .bar:active { cursor: grabbing; } .bar i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+  .bar span { margin: 0 auto; color: #b8b8bd; transform: translateX(-30px); }
+  .body { padding: 18px 20px; font-size: 15px; line-height: 1.55; }
+  .body h1 { margin: 0 0 6px; font-size: 26px; } .body p { margin: 0 0 10px; color: #c9c9d0; }
+  .body code { background: #2c2c30; padding: 6px 10px; border-radius: 8px; display: block; font-size: 12.5px; color: #ffd89a; white-space: nowrap; overflow: auto; }
+  .body a { color: #ffcc66; }
+  .hint { position: fixed; z-index: 2; left: 50%; bottom: 22px; transform: translateX(-50%); color: #f4ead8; font-size: 14px;
+          background: rgba(10,18,48,.75); border: 1px solid rgba(224,184,74,.7); padding: 8px 16px; border-radius: 999px; }
+</style>
+</head>
+<body>
+<iframe id="wallpaper" src="wallpaper.html" title="Animated village wallpaper"></iframe>
+<div class="menubar"><b>Finder</b><span>File</span><span>Edit</span><span>View</span><div class="r"><span>❄︎ <span id="cd"></span></span></div></div>
+
+<div class="win" id="w1" style="left:8%; top:120px; width:440px; height:270px">
+  <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span>Christmas Mode</span></div>
+  <div class="body">
+    <h1>It snows on your Mac ❄️</h1>
+    <p>Snow piles up on your real windows. Drag or shake this window and watch it fall off.</p>
+    <p>Free · open source · no permissions · macOS 14+</p>
+    <p><a href="https://github.com/romainsildev/christmas-mode" target="_blank" rel="noopener">Get it free on GitHub →</a></p>
+  </div>
+</div>
+<div class="win" id="w2" style="left:52%; top:270px; width:380px; height:230px">
+  <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span>Notes</span></div>
+  <div class="body">
+    <p>🎿 skiers jump between your windows</p>
+    <p>🧑‍🏭 tiny workers shovel the snow off</p>
+    <p>🎅 Santa drops gifts — click them</p>
+    <p>🐧 penguins, igloos, a snowplow…</p>
+  </div>
+</div>
+<div class="hint">Drag the windows around · click the gifts</div>
+<iframe id="overlay" src="overlay.html" title="Snow overlay"></iframe>
+
+<script>
+// Drives the real overlay engine from the page instead of macOS: fake windows, real snow.
+(function () {
+  const overlay = document.getElementById('overlay');
+  const wins = [...document.querySelectorAll('.win')];
+  let order = wins.slice(), mouse = [-999, -999], clicks = [];
+  const days = Math.max(0, Math.ceil((new Date(new Date().getFullYear(), 11, 25) - new Date()) / 864e5));
+  document.getElementById('cd').textContent = days ? days + 'd' : 'Xmas!';
+
+  wins.forEach(w => {
+    const bar = w.querySelector('.bar');
+    bar.addEventListener('pointerdown', e => {
+      order = [w, ...order.filter(o => o !== w)];
+      order.slice().reverse().forEach((o, i) => o.style.zIndex = 1 + i * 0.01);
+      const sx = e.clientX - w.offsetLeft, sy = e.clientY - w.offsetTop;
+      const move = ev => { w.style.left = ev.clientX - sx + 'px'; w.style.top = Math.max(28, ev.clientY - sy) + 'px'; };
+      const up = () => { removeEventListener('pointermove', move); removeEventListener('pointerup', up); };
+      addEventListener('pointermove', move); addEventListener('pointerup', up);
+    });
+  });
+  addEventListener('pointermove', e => { mouse = [e.clientX, e.clientY]; });
+  addEventListener('pointerdown', e => clicks.push([e.clientX, e.clientY]));
+
+  let started = false, filled = false;
+  setInterval(() => {
+    const MN = overlay.contentWindow && overlay.contentWindow.MN;
+    if (!MN) return;
+    if (!started) { started = true; MN.setOpts({ people: 2 }); MN.intro && MN.intro(); }
+    const list = order.map((w, z) => { const r = w.getBoundingClientRect(); return { id: wins.indexOf(w) + 1, x: r.left, y: r.top, w: r.width, h: r.height, z }; });
+    MN.update({ wins: list, mouse, clicks, menu: 28 });
+    if (!filled) { filled = true; MN.fill && MN.fill(); }   // snow already piled up when the page opens
+    clicks = [];
+  }, 33);
+})();
+</script>
+</body>
+</html>

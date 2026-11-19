@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="64" height="40" viewBox="0 0 64 40">
+<!-- patins -->
+<path d="M16 37.5V31M40 37.5V31" stroke="#c99a2e" stroke-width="1.8"/>
+<path d="M5 38H47Q57.5 38 57.5 29.5Q57.5 25.6 54 26.6" fill="none" stroke="#c99a2e" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M5 37.6H47Q57 37.6 57.1 29.5" fill="none" stroke="#e0b84a" stroke-width="1" stroke-linecap="round"/>
+<!-- hotte -->
+<rect x="14.6" y="3.6" width="5.4" height="5.6" rx="0.7" fill="#e0b84a" transform="rotate(-10 17 6)"/>
+<rect x="16.7" y="3.6" width="1.2" height="5.6" fill="#a83232" transform="rotate(-10 17 6)"/>
+<rect x="20.6" y="2.6" width="5" height="6" rx="0.7" fill="#2d3a5c" transform="rotate(9 23 6)"/>
+<rect x="22.5" y="2.6" width="1.2" height="6" fill="#fff1c9" transform="rotate(9 23 6)"/>
+<path d="M12.6 25Q9.6 14 14.6 9Q17 6.6 20 8Q24 6.6 26.4 10Q29.4 15 27.6 25Z" fill="#7a5232"/>
+<path d="M12.6 25Q9.6 14 14.6 9Q15.6 8 16.8 7.6Q13.4 14 16 25Z" fill="#5b3a22"/>
+<path d="M21 10.5Q24.6 12 25.4 17" fill="none" stroke="#9a6f47" stroke-width="1" stroke-linecap="round"/>
+<!-- pere noel -->
+<path d="M28.4 25Q28 13.4 34.6 13.4Q41.4 13.4 41.4 25Z" fill="#c94a3f"/>
+<rect x="28.6" y="19.6" width="12.8" height="1.8" fill="#1f2430"/>
+<path d="M32.6 6.6Q32.6 2.4 36.2 2.6Q39.4 2.8 39.4 7Z" fill="#c94a3f"/>
+<path d="M34 3.2Q30 2.4 28.6 6.6L30.6 7Q31.6 5 34.6 5Z" fill="#a83232"/>
+<circle cx="29.2" cy="7.4" r="1.5" fill="#f4f6fb"/>
+<circle cx="36" cy="9.4" r="3.2" fill="#f0c4a0"/>
+<path d="M32.6 9Q31.6 15.4 36.4 16Q40.8 15.6 39.8 10.6Q38 12.2 36.2 11.6Q33.8 11.6 32.6 9Z" fill="#f4f6fb"/>
+<path d="M33 12.5Q33.6 15.2 36.4 15.4" fill="none" stroke="#c9d4ee" stroke-width="0.7" stroke-linecap="round"/>
+<rect x="32.2" y="6.2" width="7.6" height="1.9" rx="0.95" fill="#f4f6fb"/>
+<circle cx="37.6" cy="9.3" r="0.45" fill="#1f2430"/>
+<circle cx="39.2" cy="10.3" r="0.8" fill="#e8a583"/>
+<path d="M36 16.4L43.4 19.6" stroke="#c94a3f" stroke-width="3.4" stroke-linecap="round"/>
+<path d="M36 16.4L42 19" stroke="#a83232" stroke-width="1" stroke-linecap="round" transform="translate(-0.4 1.3)"/>
+<circle cx="44.2" cy="20" r="1.7" fill="#f4f6fb"/>
+<circle cx="46" cy="20.6" r="1.5" fill="#1f2430"/>
+<!-- caisse -->
+<path d="M7.5 13Q5.6 13 6 16Q8 32 18 32H42Q53 32 54 20Q54.5 14 59 13.5Q62 13 61.5 10.5Q61 8.4 58.5 9Q49 11 47.5 21Q47 23 45 23H22Q13.5 23 12.4 15Q12 13 10 13Z" fill="#a83232" stroke="#d4a64a" stroke-width="1.3" stroke-linejoin="round"/>
+<path d="M8.4 22Q11 30.6 18 30.9H42Q50 30.8 52.4 24Q46 28.4 30 28.4Q14 28.4 8.4 22Z" fill="#7a5232"/>
+<path d="M14 25.2Q30 27.6 47 25.2" fill="none" stroke="#c94a3f" stroke-width="1.3" stroke-linecap="round"/>
+<path d="M50.4 20Q51 14 56 12" fill="none" stroke="#c94a3f" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="58.6" cy="11.2" r="1.3" fill="#e0b84a"/>
+<circle cx="12" cy="28.4" r="0.5" fill="#d4a64a"/><circle cx="30" cy="30" r="0.5" fill="#d4a64a"/><circle cx="48" cy="28.6" r="0.5" fill="#d4a64a"/>
+</svg>

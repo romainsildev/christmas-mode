@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" viewBox="0 0 26 40">
+<rect x="11.5" y="33" width="3" height="7" fill="#7a5232"/><rect x="13.3" y="33" width="1.2" height="7" fill="#5b3a22"/>
+<path d="M13 18 L24 34 Q21 36 18 34.5 Q15.5 36.5 13 34.5 Q10.5 36.5 8 34.5 Q5 36 2 34Z" fill="#2f5d50"/>
+<path d="M13 18 L24 34 Q21 36 18 34.5 Q17 27 13 18Z" fill="#24483f"/>
+<path d="M2 34 Q5 36 8 34.5 Q10.5 36.5 13 34.5 Q15.5 36.5 18 34.5 Q21 36 24 34" fill="none" stroke="#f4f6fb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 34.5 Q21 36 24 34" fill="none" stroke="#c9d4ee" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M13 11 L21.5 25 Q19 26.5 16.5 25.3 Q13 27 9.5 25.3 Q7 26.5 4.5 25Z" fill="#2f5d50"/>
+<path d="M13 11 L21.5 25 Q19 26.5 16.5 25.3 Q16 18.5 13 11Z" fill="#24483f"/>
+<path d="M4.5 25 Q7 26.5 9.5 25.3 Q13 27 16.5 25.3 Q19 26.5 21.5 25" fill="none" stroke="#f4f6fb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.5 25.3 Q19 26.5 21.5 25" fill="none" stroke="#c9d4ee" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M13 5 L19 16 Q16 17.5 13 16.3 Q10 17.5 7 16Z" fill="#2f5d50"/>
+<path d="M13 5 L19 16 Q16 17.5 14.5 16.8 Q15 11 13 5Z" fill="#24483f"/>
+<path d="M7 16 Q10 17.5 13 16.3 Q16 17.5 19 16" fill="none" stroke="#f4f6fb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6 16.8 Q16.6 17.2 19 16" fill="none" stroke="#c9d4ee" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="12.6" cy="12.6" r="1.4" fill="#c94a3f"/><circle cx="12.2" cy="12.2" r=".45" fill="#ffd89a"/>
+<circle cx="9.4" cy="21.6" r="1.4" fill="#e0b84a"/><circle cx="9" cy="21.2" r=".45" fill="#fff1c9"/>
+<circle cx="16.4" cy="20.6" r="1.4" fill="#c94a3f"/><circle cx="16" cy="20.2" r=".45" fill="#ffd89a"/>
+<circle cx="7" cy="30.6" r="1.4" fill="#c94a3f"/><circle cx="6.6" cy="30.2" r=".45" fill="#ffd89a"/>
+<circle cx="13" cy="29.4" r="1.4" fill="#e0b84a"/><circle cx="12.6" cy="29" r=".45" fill="#fff1c9"/>
+<circle cx="19" cy="30.4" r="1.4" fill="#e0b84a"/><circle cx="18.6" cy="30" r=".45" fill="#fff1c9"/>
+<path d="M13 .6 13.88 2.79 16.23 2.95 14.43 4.46 15 6.75 13 5.5 11 6.75 11.57 4.46 9.77 2.95 12.12 2.79Z" fill="#ffcc66" stroke="#ffcc66" stroke-width=".6" stroke-linejoin="round"/>
+<path d="M13 .6 13.88 2.79 16.23 2.95 14.43 4.46 15 6.75 13 5.5Z" fill="#e0b84a"/>
+<circle cx="12.4" cy="3.4" r=".6" fill="#fff1c9"/>
+<path d="M4.5 40 Q5.4 37.6 9 38.2 Q13 37 17 38.2 Q20.6 37.6 21.5 40Z" fill="#f4f6fb"/>
+<path d="M17 38.2 Q20.6 37.6 21.5 40 H17.6 Q18.6 39 17 38.2Z" fill="#c9d4ee"/>
+</svg>

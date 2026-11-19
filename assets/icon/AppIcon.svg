@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1230"/>
+      <stop offset="1" stop-color="#253063"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="512" cy="440" r="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffdc7a" stop-opacity="0.95"/>
+      <stop offset="0.4" stop-color="#e8a544" stop-opacity="0.6"/>
+      <stop offset="0.75" stop-color="#b8603a" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#a83232" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titlebar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3a40"/>
+      <stop offset="1" stop-color="#2c2c30"/>
+    </linearGradient>
+    <linearGradient id="winbody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232327"/>
+      <stop offset="1" stop-color="#1e1e21"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9d4ee"/>
+      <stop offset="1" stop-color="#f4f6fb"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f6fb"/>
+      <stop offset="1" stop-color="#c9d4ee"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="0.25" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="body">
+      <rect x="100" y="100" width="824" height="824" rx="185" ry="185"/>
+    </clipPath>
+    <clipPath id="win">
+      <rect x="232" y="420" width="560" height="400" rx="38" ry="38"/>
+    </clipPath>
+  </defs>
+
+  <!-- soft drop shadow (stacked shapes, no filter) -->
+  <g fill="#050816">
+    <rect x="84" y="102" width="856" height="856" rx="200" opacity="0.035"/>
+    <rect x="90" y="106" width="844" height="846" rx="196" opacity="0.045"/>
+    <rect x="96" y="110" width="832" height="836" rx="192" opacity="0.06"/>
+    <rect x="102" y="112" width="820" height="828" rx="188" opacity="0.08"/>
+    <rect x="108" y="114" width="808" height="820" rx="184" opacity="0.10"/>
+  </g>
+
+  <g clip-path="url(#body)">
+    <rect x="100" y="100" width="824" height="824" fill="url(#night)"/>
+    <rect x="100" y="100" width="824" height="824" fill="url(#glow)"/>
+
+    <!-- distant snowflakes -->
+    <g fill="#f4f6fb">
+      <circle cx="190" cy="210" r="13" opacity="0.9"/>
+      <circle cx="300" cy="170" r="8" opacity="0.7"/>
+      <circle cx="420" cy="225" r="11" opacity="0.85"/>
+      <circle cx="610" cy="180" r="14" opacity="0.9"/>
+      <circle cx="850" cy="250" r="12" opacity="0.9"/>
+      <circle cx="770" cy="165" r="7" opacity="0.7"/>
+      <circle cx="168" cy="360" r="9" opacity="0.75"/>
+      <circle cx="868" cy="420" r="9" opacity="0.75"/>
+      <circle cx="160" cy="560" r="13" opacity="0.9"/>
+      <circle cx="872" cy="600" r="14" opacity="0.9"/>
+      <circle cx="182" cy="700" r="8" opacity="0.7"/>
+      <circle cx="845" cy="720" r="8" opacity="0.7"/>
+      <circle cx="520" cy="160" r="7" opacity="0.6"/>
+    </g>
+    <!-- two crystal flakes -->
+    <g stroke="#f4f6fb" stroke-width="9" stroke-linecap="round" fill="none">
+      <g transform="translate(300 262)">
+        <path d="M0 -34V34M-29.4 -17L29.4 17M-29.4 17L29.4 -17"/>
+      </g>
+      <g transform="translate(748 258) rotate(15)" opacity="0.9">
+        <path d="M0 -26V26M-22.5 -13L22.5 13M-22.5 13L22.5 -13"/>
+      </g>
+    </g>
+
+    <!-- window -->
+    <rect x="227" y="415" width="570" height="410" rx="42" fill="#4a4a52"/>
+    <g clip-path="url(#win)">
+      <rect x="232" y="420" width="560" height="400" fill="url(#winbody)"/>
+      <rect x="232" y="420" width="560" height="112" fill="url(#titlebar)"/>
+      <rect x="232" y="528" width="560" height="5" fill="#161618"/>
+      <!-- content placeholders -->
+      <rect x="276" y="574" width="150" height="150" rx="22" fill="#2c2c30"/>
+      <circle cx="351" cy="649" r="34" fill="#e0b84a" opacity="0.9"/>
+      <rect x="456" y="580" width="290" height="30" rx="15" fill="#3a3a40"/>
+      <rect x="456" y="634" width="220" height="30" rx="15" fill="#2c2c30"/>
+      <rect x="456" y="688" width="256" height="30" rx="15" fill="#2c2c30"/>
+    </g>
+    <!-- traffic lights -->
+    <circle cx="292" cy="492" r="19" fill="#c94a3f"/>
+    <circle cx="346" cy="492" r="19" fill="#e0b84a"/>
+    <circle cx="400" cy="492" r="19" fill="#6fae6a"/>
+
+    <!-- icicles -->
+    <g fill="url(#ice)">
+      <path d="M452 450C458 490 468 520 472 536C476 520 486 490 492 450Z"/>
+      <path d="M520 450C528 510 542 560 548 590C554 560 568 510 576 450Z"/>
+      <path d="M600 450C606 485 614 508 618 522C622 508 630 485 636 450Z"/>
+      <path d="M668 450C676 505 688 545 694 572C700 545 712 505 720 450Z"/>
+      <path d="M742 450C747 478 754 496 757 508C760 496 767 478 772 450Z"/>
+      <path d="M204 452C208 480 214 500 218 514C222 500 228 480 232 452Z"/>
+      <path d="M792 455C796 490 802 512 806 528C810 512 816 490 820 455Z"/>
+    </g>
+
+    <!-- snow pile: shadow base -->
+    <path fill="#a9b5d8" d="M194 440C178 398 214 368 250 374C262 326 332 308 374 342C412 292 522 286 562 336C602 308 682 314 704 358C752 346 814 370 830 414C842 448 822 468 800 466C780 480 760 474 748 460C722 450 700 456 690 466C664 478 640 470 624 458C596 474 562 456 522 462C472 470 440 452 400 458C350 466 300 452 262 462C240 474 206 470 194 440Z"/>
+    <path fill="#c9d4ee" d="M194 432C178 398 214 368 250 374C262 326 332 308 374 342C412 292 522 286 562 336C602 308 682 314 704 358C752 346 814 370 830 414C838 438 822 454 800 452C780 464 760 460 748 448C722 438 700 444 690 452C664 464 640 456 624 446C596 460 562 444 522 450C472 458 440 440 400 446C350 454 300 440 262 450C240 460 204 458 194 432Z"/>
+    <!-- snow pile: lit top -->
+    <path fill="#f4f6fb" d="M206 420C192 394 220 372 252 380C264 334 330 316 372 350C412 300 520 294 560 344C600 316 678 322 700 366C746 354 800 374 816 410C806 424 780 418 756 422C724 410 700 416 680 426C652 414 622 420 600 430C566 418 540 424 510 430C470 420 430 424 398 430C350 420 310 426 270 432C246 424 222 430 206 420Z"/>
+
+    <!-- santa hat on the pile -->
+    <g transform="translate(676 338) rotate(10)">
+      <path fill="#c94a3f" d="M-62 -6C-56 -88 -8 -134 48 -124C92 -116 112 -80 110 -40C98 -54 80 -60 66 -54C64 -40 62 -22 60 -6Z"/>
+      <path fill="#a83232" d="M14 -6C18 -52 38 -68 66 -54C64 -40 62 -22 60 -6Z"/>
+      <rect x="-78" y="-22" width="156" height="46" rx="23" fill="#f4f6fb"/>
+      <path fill="#c9d4ee" d="M-70 8C-30 16 30 16 70 8C64 20 58 24 55 24H-55C-60 24 -66 18 -70 8Z"/>
+      <circle cx="112" cy="-34" r="25" fill="#f4f6fb"/>
+    </g>
+
+    <!-- ground snow -->
+    <path fill="#c9d4ee" d="M100 792C230 742 380 762 520 786C680 814 800 758 924 772V924H100Z"/>
+    <path fill="url(#ground)" d="M100 812C240 764 380 784 520 806C680 832 800 782 924 794V924H100Z"/>
+
+    <!-- foreground snowflakes -->
+    <g fill="#f4f6fb">
+      <circle cx="262" cy="592" r="10" opacity="0.0"/>
+      <circle cx="560" cy="250" r="9" opacity="0.8"/>
+      <circle cx="455" cy="150" r="6" opacity="0.6"/>
+    </g>
+
+    <rect x="100" y="100" width="824" height="824" fill="url(#sheen)"/>
+  </g>
+</svg>

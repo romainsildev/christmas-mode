@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="34" viewBox="0 0 60 34">
+<defs>
+<clipPath id="igA"><path d="M6 32 A24 25 0 0 1 54 32 Z"/></clipPath>
+<radialGradient id="igB" cx="0.5" cy="0.95" r="0.9"><stop offset="0" stop-color="#fff1c9"/><stop offset="0.55" stop-color="#ffcc66"/><stop offset="1" stop-color="#d4a64a"/></radialGradient>
+</defs>
+<path d="M6 32 A24 25 0 0 1 54 32 Z" fill="#b8cde6"/>
+<g clip-path="url(#igA)">
+<ellipse cx="26" cy="34" rx="23" ry="26" fill="#dbe8f7"/>
+<ellipse cx="20" cy="16" rx="8" ry="5" fill="#f4f6fb" opacity=".55" transform="rotate(-30 20 16)"/>
+<g fill="none" stroke="#a9b5d8" stroke-width=".8" stroke-linecap="round" opacity=".8">
+<path d="M4 26 Q30 24 56 26M7 19.5 Q30 17.5 53 19.5M11 13.5 Q30 11.5 49 13.5"/>
+<path d="M12 26v6M47 26.2v6M17 19v6M43 19v6M9 20v5M51 20v5M22 12.5v6M30 12v6M38 12.5v6M26 8v4M34 8v4M14 14.5v4M46 14.5v4"/>
+</g>
+</g>
+<path d="M18 10.6 A24 25 0 0 1 42 10.6 Q39 12.4 36 10.8 Q33 13.2 30 11.2 Q27 13.2 24 10.8 Q21 12.6 18 10.6Z" fill="#f4f6fb"/>
+<path d="M30 7 A24 25 0 0 1 42 10.6 Q39 12.4 36 10.8 Q35 8.5 30 7Z" fill="#c9d4ee"/>
+<path d="M19.5 33 V23 A10.5 10.5 0 0 1 40.5 23 V33Z" fill="#a9b5d8"/>
+<path d="M20.5 33 V23 A9.5 9.5 0 0 1 39.5 23 V33Z" fill="#dbe8f7"/>
+<path d="M30 13.5 A9.5 9.5 0 0 1 39.5 23 V33 H36 V23.5 A6 6 0 0 0 30 17.5Z" fill="#b8cde6"/>
+<g stroke="#a9b5d8" stroke-width=".7" stroke-linecap="round" opacity=".9"><path d="M20.7 27h3.2M36.1 27h3.2M22 18.6l2.6 2M38 18.6l-2.6 2M30 13.8v3.4M25.6 14.9l1.5 3M34.4 14.9l-1.5 3"/></g>
+<path d="M24 33 V24 A6 6 0 0 1 36 24 V33Z" fill="url(#igB)"/>
+<path d="M24 33 V24 A6 6 0 0 1 30 18 A5 6 0 0 0 26 24 V33Z" fill="#d4a64a" opacity=".55"/>
+<path d="M0 34 Q1.5 29.5 7 30.2 Q11 27.6 16 30 Q20 30.6 23.5 32.2 L36.5 32.2 Q40 30.2 45 30.4 Q51 28.2 55 30.8 Q59.5 30.6 60 34Z" fill="#f4f6fb"/>
+<path d="M45 30.4 Q51 28.2 55 30.8 Q59.5 30.6 60 34 H46 Q52 32.6 45 30.4Z" fill="#c9d4ee"/>
+<path d="M7 30.2 Q9.5 30.6 10.5 32" fill="none" stroke="#c9d4ee" stroke-width=".8" stroke-linecap="round"/>
+<ellipse cx="30" cy="33" rx="7.5" ry="1.1" fill="#ffd89a" opacity=".85"/>
+</svg>

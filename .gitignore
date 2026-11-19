@@ -1,0 +1,11 @@
+.superpowers/
+build/
+.build/
+assets/_preview/
+*.png.tmp
+.DS_Store
+dist/
+.claude/
+maquettes/
+docs/superpowers/
+assets/wallpaper/_generator.py
